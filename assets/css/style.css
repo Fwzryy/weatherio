@@ -933,7 +933,7 @@ article.container::before {
   }
   
   article.container {
-    grid-template-columns: 360px minmax(0 1fr);
+    grid-template-columns: 360px minmax(0, 1fr);
     gap: 40px;
   }
 
@@ -954,6 +954,6 @@ article.container::before {
 /**
   Responsive for >= 1400px
 */
-@media (min-width:1200px) {
-
+@media (min-width:1400px) {
+  .highlight-list { grid-template-columns: repeat(4,1fr); }
 }
